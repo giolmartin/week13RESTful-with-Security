@@ -1,9 +1,9 @@
-package com.meritamerica.week11.services;
+package com.meritamerica.week13.security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.meritamerica.week11.models.AccountHoldersContactDetails;
-import com.meritamerica.week11.repos.AccountHoldersContactDetailsRepository;
+import com.meritamerica.week13.security.models.AccountHoldersContactDetails;
+import com.meritamerica.week13.security.repos.AccountHoldersContactDetailsRepository;
 
 public class AccountHoldersContactDetailsService {
 

@@ -1,8 +1,8 @@
-package com.meritamerica.week11.repos;
+package com.meritamerica.week13.security.repos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.meritamerica.week11.models.CheckingAccount;
+import com.meritamerica.week13.security.models.CheckingAccount;
 
 public interface CheckingAccountRepository extends JpaRepository<CheckingAccount, Integer> {
 

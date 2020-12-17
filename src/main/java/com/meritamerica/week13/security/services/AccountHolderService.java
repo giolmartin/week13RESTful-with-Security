@@ -1,4 +1,4 @@
-package com.meritamerica.week11.services;
+package com.meritamerica.week13.security.services;
 
 import java.util.List;
 
@@ -7,19 +7,19 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.meritamerica.week11.exceptions.ExceedsCombinedLimitException;
-import com.meritamerica.week11.exceptions.NoSuchResourceFoundException;
-import com.meritamerica.week11.models.AccountHolder;
-import com.meritamerica.week11.models.AccountHoldersContactDetails;
-import com.meritamerica.week11.models.CDAccount;
-import com.meritamerica.week11.models.CDOffering;
-import com.meritamerica.week11.models.CheckingAccount;
-import com.meritamerica.week11.models.SavingsAccount;
-import com.meritamerica.week11.repos.AccountHolderRepository;
-import com.meritamerica.week11.repos.CDAccountRepository;
-import com.meritamerica.week11.repos.CDOfferingRepository;
-import com.meritamerica.week11.repos.CheckingAccountRepository;
-import com.meritamerica.week11.repos.SavingsAccountRepository;
+import com.meritamerica.week13.security.exceptions.ExceedsCombinedLimitException;
+import com.meritamerica.week13.security.exceptions.NoSuchResourceFoundException;
+import com.meritamerica.week13.security.models.AccountHolder;
+import com.meritamerica.week13.security.models.AccountHoldersContactDetails;
+import com.meritamerica.week13.security.models.CDAccount;
+import com.meritamerica.week13.security.models.CDOffering;
+import com.meritamerica.week13.security.models.CheckingAccount;
+import com.meritamerica.week13.security.models.SavingsAccount;
+import com.meritamerica.week13.security.repos.AccountHolderRepository;
+import com.meritamerica.week13.security.repos.CDAccountRepository;
+import com.meritamerica.week13.security.repos.CDOfferingRepository;
+import com.meritamerica.week13.security.repos.CheckingAccountRepository;
+import com.meritamerica.week13.security.repos.SavingsAccountRepository;
 @Service
 public class AccountHolderService {
 	

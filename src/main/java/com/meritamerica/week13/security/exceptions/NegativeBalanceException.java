@@ -1,4 +1,4 @@
-package com.meritamerica.week11.exceptions;
+package com.meritamerica.week13.security.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

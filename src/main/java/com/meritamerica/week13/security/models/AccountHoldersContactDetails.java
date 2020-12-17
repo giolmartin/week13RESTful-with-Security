@@ -1,4 +1,4 @@
-package com.meritamerica.week11.models;
+package com.meritamerica.week13.security.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
