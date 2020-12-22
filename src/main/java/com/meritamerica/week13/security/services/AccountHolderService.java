@@ -60,7 +60,6 @@ public class AccountHolderService {
 	
 	public CheckingAccount postCheckingAccount(int id, CheckingAccount checkingAccount) throws NoSuchResourceFoundException, ExceedsCombinedLimitException {
 		AccountHolder ah = findById(id);
-		checkingAccount.setAccountHolder(ah);
 		Double balance = checkingAccount.getBalance();
 		if (ah.combinedBalance() + balance > MAX_DEPOSIT_AMOUNT) {
 			throw new ExceedsCombinedLimitException("Deposit exceeds the " + MAX_DEPOSIT_AMOUNT + " total.");
@@ -88,7 +87,7 @@ public class AccountHolderService {
 		CDOffering cdO = findCDOfferingById(cdAccount.getCdOffering().getId());
 		Double balance = cdAccount.getBalance();
 		if (ah.combinedBalance() + balance > MAX_DEPOSIT_AMOUNT) {
-			throw new ExceedsCombinedLimitException("Deposit exceeds the " + MAX_DEPOSIT_AMOUNT + " total.");
+			throw new ExceedsCombinedLimitException("Deposit exceeds the " +ah.combinedBalance()+ "  " + MAX_DEPOSIT_AMOUNT + " total.");
 		}else {
 			cdAccount.setAccountHolder(ah);
 			cdAccount.setCdOffering(cdO);
